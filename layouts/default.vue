@@ -9,8 +9,8 @@
         </ul>
       </nav>
       <div class="flex gap">
-        <button class="btn btn-theme"><i class="fa-solid fa-moon"></i></button>
-        <button class="btn btn-contato">contato</button>
+        <button class="btn btn-escuro"><i class="fa-solid fa-moon"></i></button>
+        <button class="btn btn-color btn-scale">contato</button>
       </div>
     </div>
     <nuxt />
@@ -26,8 +26,8 @@
   --claro: #d8dae5;
   --sombra: #0000008f;
   --degrade-nav: #100f23;
-  --degrade1: #15142a;
-  --degrade2: #090714;
+  --degrade1: #201f38;
+  --degrade2: #110e24;
   --degrade-azul: #0051a8;
 }
 
@@ -38,7 +38,7 @@
   text-decoration: none;
   list-style: none;
   font-size: 1rem;
-
+  color: var(--claro);
 }
 
 html {
@@ -108,24 +108,41 @@ nav ul li {
 }
 
 .btn {
+  cursor: pointer;
   border: none;
   border-radius: .65rem;
   padding: .5rem;
   box-shadow: .3rem .3rem 1rem var(--sombra);
 }
 
-.btn-theme {
+.btn-lg {
+  cursor: pointer;
+  border: none;
+  border-radius: .5rem;
+  padding: .7rem 2rem;
+  box-shadow: .3rem .3rem 1rem var(--sombra);
+}
+
+.btn-escuro {
   background-image: linear-gradient(-45deg, var(--degrade2), var(--degrade1));
 }
 
-.btn-contato {
+.btn-color {
   padding-left: 2rem;
   padding-right: 2rem;
   color: var(--claro);
   background-image: linear-gradient(-45deg, var(--primaria) 20%, var(--degrade-azul));
 }
 
-.btn-theme i {
+.btn-scale {
+  transition: transform 300ms ease;
+}
+
+.btn-scale:hover {
+  transform: scale(1.1);
+}
+
+.btn-escuro i {
   color: var(--primaria);
 }
 </style>
