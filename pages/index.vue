@@ -43,7 +43,7 @@
         <p>Criação de sites institucionais.</p>
       </div>
       <div class="card-servico">
-        <p>Configuração e gerencial de Google Ads.</p>
+        <p>Configuração e gerenciamnto de Google Ads.</p>
       </div>
     </div>
   </section>
@@ -184,5 +184,64 @@ header div.card {
 }
 .btn-contato h3 {
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 426px) {
+  header {
+    height: fit-content;
+    flex-direction: column-reverse;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20rem;
+  }
+
+  header div.card {
+    bottom: -20rem;
+  }
+
+  .infos {
+    width: 90%;
+    text-align: center;
+  }
+
+  .anim {
+    width: 70%;
+    pointer-events: none;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .chamada {
+    padding: 3rem 2rem;
+  }
+
+  .chamada h3 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card-servico {
+    width: 90%;
+  }
+
+  .servicos h1 {
+    text-align: center;
+  }
+
+  .btn-contato {
+    margin: 0;
+    text-align: center;
+  }
+
+  .contato {
+    padding: 3rem 2rem;
+  }
 }
 </style>

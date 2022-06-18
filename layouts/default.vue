@@ -5,7 +5,6 @@
         <h1>Lumos</h1>
         <ul>
           <li><nuxt-link to="/"><a>HOME</a></nuxt-link></li>
-          <li><nuxt-link to="/sobre"><a>SOBRE</a></nuxt-link></li>
         </ul>
       </nav>
       <div class="btn-container flex gap">
@@ -13,10 +12,13 @@
         <button class="btn btn-color btn-scale">contato</button>
       </div>
     </div>
+
     <a href="https://bit.ly/3tM6Duv" target="_blank">
       <img src="@/assets/whatsapp.svg" alt="logo whatsapp" class="zipzop">
     </a>
+
     <nuxt />
+
     <footer>
       <h1>Lumos</h1>
       <div class="instagram">
@@ -209,22 +211,62 @@ footer {
   gap: 4rem;
   position: relative;
 }
+
 footer h1 {
   font-size: 4rem;
 }
+
 .instagram a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .instagram i {
   font-size: 2rem;
 }
+
 .copyright {
   font-size: .75rem;
   position: absolute;
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media screen and (max-width: 426px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .btn-container {
+    display: none;
+  }
+
+  nav {
+    width: 90%;
+    padding: .5rem 2rem;
+  }
+
+  nav ul li {
+    margin-left: 1rem;
+  }
+
+  .zipzop {
+    width: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  footer {
+    padding: 3rem 0 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+  }
 }
 </style>
