@@ -5193,6 +5193,18 @@ lodash@^4.15.0, lodash@^4.17.14, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
+lottie-web-vue@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/lottie-web-vue/-/lottie-web-vue-1.2.1.tgz#21327e1d1814fb2f40e0b4ad4378339835119afe"
+  integrity sha512-JwHb8x5zOBBOL4zObVgBIVmVDMBALo1zMP6/OR+gbEWDpQTpRndixjhjwiVvjUWlrZPl7ScUwiHQGwrn6qlfEw==
+  dependencies:
+    lottie-web "^5.7.4"
+
+lottie-web@^5.7.4:
+  version "5.9.4"
+  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.9.4.tgz#c01478ee5dd47f916cb4bb79040c11d427872d57"
+  integrity sha512-bSs1ZTPifnBVejO1MnQHdfrKfcn02YTCmgOh2wcAEICqRA0V7GzDh8FnwXY6+EzT+i8XOunaIloo/5xC5YNbsA==
+
 lower-case@^1.1.1:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/lower-case/-/lower-case-1.1.4.tgz#9a2cabd1b9e8e0ae993a4bf7d5875c39c42e8eac"
