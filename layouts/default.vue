@@ -12,7 +12,7 @@
         <button class="btn btn-color btn-scale">contato</button>
       </div>
     </div>
-    <a href="https://bit.ly/LumosContato" target="_blank">
+    <a href="https://bit.ly/LumosContato" target="_blank" @click="gtag_report_conversion">
       <img src="@/assets/whatsapp.svg" alt="logo whatsapp" class="zipzop">
     </a>
     <nuxt />
@@ -28,6 +28,19 @@
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    gtag_report_conversion() {
+      this.$gtag('event', 'conversion', {
+        'send_to': 'AW-10936166285/eKTtCIzP88cDEI3P4t4o'
+      });
+      return false;
+    }
+  }
+}
+</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');

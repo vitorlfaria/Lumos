@@ -39,7 +39,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/google-gtag'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -55,5 +56,19 @@ export default {
     asyncID: async (context) => {
       return 'UA-232486415-1'
     }
+  },
+
+  'google-gtag': {
+    id: 'AW-10936166285',
+    config: {
+      anonymize_ip: true, // anonymize IP
+      send_page_view: false, // might be necessary to avoid duplicated page track on page reload
+      linker: {
+        domains: ['lumos.dev.br']
+      }
+    },
+    debug: true, // enable to track in dev mode
+    disableAutoPageTrack: false
   }
+
 }
