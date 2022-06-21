@@ -5,7 +5,6 @@
         <h1>Lumos</h1>
         <ul>
           <li><nuxt-link to="/"><a>HOME</a></nuxt-link></li>
-          <li><nuxt-link to="/sobre"><a>SOBRE</a></nuxt-link></li>
         </ul>
       </nav>
       <div class="btn-container flex gap">
