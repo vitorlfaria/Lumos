@@ -48,7 +48,7 @@
     </div>
   </section>
   <section class="contato">
-    <a href="https://bit.ly/3tM6Duv" target="_blank">
+    <a href="https://bit.ly/LumosContato" target="_blank">
       <div class="btn-contato">
         <h3>Entre em contato para mais informações.</h3>
       </div>
