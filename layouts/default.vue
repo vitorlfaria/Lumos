@@ -13,7 +13,7 @@
         <button class="btn btn-color btn-scale">contato</button>
       </div>
     </div>
-    <a href="https://bit.ly/3tM6Duv" target="_blank">
+    <a href="https://bit.ly/LumosContato" target="_blank">
       <img src="@/assets/whatsapp.svg" alt="logo whatsapp" class="zipzop">
     </a>
     <nuxt />
