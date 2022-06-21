@@ -227,4 +227,39 @@ footer h1 {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 426px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .btn-container {
+    display: none;
+  }
+
+  nav {
+    width: 90%;
+    padding: .5rem 2rem;
+  }
+
+  nav ul li {
+    margin-left: 1rem;
+  }
+
+  .zipzop {
+    width: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  footer {
+    padding: 3rem 0 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+  }
+}
 </style>
