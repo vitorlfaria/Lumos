@@ -17,7 +17,7 @@
     </a>
     <nuxt />
     <footer>
-      <h1>Lumos</h1>
+      <img src="@/assets/Logo-Lumos.svg" alt="Logo Lumos">
       <div class="instagram">
         <a href="https://www.instagram.com/lumos_curitiba" target="_blank">
           <h4>Siga-nos no Instagram</h4>
@@ -55,6 +55,20 @@
 
 html {
   font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #18191c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333942;
+  border-radius: 50px;
 }
 
 .container {
@@ -208,8 +222,8 @@ footer {
   gap: 4rem;
   position: relative;
 }
-footer h1 {
-  font-size: 4rem;
+footer img {
+  width: 20%;
 }
 .instagram a {
   display: flex;
@@ -259,6 +273,10 @@ footer h1 {
     flex-direction: column;
     gap: 4rem;
     position: relative;
+  }
+
+  footer img {
+    width: 80%;
   }
 }
 </style>
