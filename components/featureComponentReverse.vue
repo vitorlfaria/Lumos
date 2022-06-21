@@ -67,4 +67,19 @@ export default {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+
+@media screen and (max-width: 426px) {
+  .feature-component {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .feature-component__image {
+    width: 90%;
+  }
+
+  .feature-component__content {
+    text-align: center;
+  }
+}
 </style>
