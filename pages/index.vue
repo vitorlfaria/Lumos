@@ -5,8 +5,8 @@
       <h1>Trazendo luz aos seus projetos</h1>
       <p>Seu negócio merece ser visto! E para ser notado, nada melhor do que um site próprio e personalizado</p>
       <div class="flex gap">
-        <button class="btn-lg btn-color btn-scale">orçamentos</button>
-        <button class="btn-lg btn-escuro btn-scale">serviços</button>
+        <a href="https://bit.ly/LumosContato" class="btn-lg btn-color btn-scale">orçamentos</a>
+        <a href="#servicos" class="btn-lg btn-escuro btn-scale">serviços</a>
       </div>
     </div>
     <lottie-animation ref="anim" :animationData="require('@/assets/93809-moon.json')" :loop="true" class="anim" />
@@ -28,7 +28,7 @@
   />
   <feature-component
     title="Soluções por um valor justo"
-    description="Nós oferecemos preços acessíveis baseados na complexidade do seu projeto, garantindo que você receberá um plano que se encaixe na sua necessidade. Nossa equipe está disponível para responder quaisquer perguntas ou dúvidas que você possa ter - então entre em contato conosco agora mesmo!"
+    description="Nós oferecemos preços acessíveis baseados na complexidade do seu projeto, garantindo que você receberá um plano que se encaixe na sua necessidade. Nossa equipe está disponível para responder quaisquer dúvidas que você possa ter - então entre em contato conosco agora mesmo!"
     animation="93344-money-investment.json"
   />
   <div class="chamada">
@@ -36,21 +36,21 @@
       website para qualquer negócio, empresa ou organização que precisa ser mais conectado. Somos uma equipe de designers e desenvolvedores que vamos trabalhar juntos com você para criar um site personalizado que é exclusivo e perfeitamente ajustado à sua marca.
     </h3>
   </div>
-  <section class="servicos container">
-    <h1>Serviços Que Prestamos</h1>
+  <section id="servicos" class="servicos container">
+    <h1>Nossos Serviços</h1>
     <div class="card-container">
       <div class="card-servico">
-        <p>Criação de sites institucionais.</p>
+        <p>Criação de sites institucionais totalmente personalizados para você.</p>
       </div>
-      <div class="card-servico">
-        <p>Configuração e gerenciamento de Google Ads.</p>
-      </div>
+<!--      <div class="card-servico">-->
+<!--        <p>Configuração e gerenciamento de Google Ads.</p>-->
+<!--      </div>-->
     </div>
   </section>
   <section class="contato">
     <a href="https://bit.ly/LumosContato" target="_blank">
       <div class="btn-contato">
-        <h3>Entre em contato para mais informações.</h3>
+        <h3>Entre em contato para montar o plano perfeito para você.</h3>
       </div>
     </a>
   </section>
@@ -157,9 +157,9 @@ header div.card {
 }
 .card-servico {
   padding: 2rem;
-  background-image: var(--degrade-escuro);
+  background-image: var(--degrade-color);
   border-radius: 1rem;
-  width: 45%;
+  width: 100%;
   text-align: center;
 }
 .card-servico > p {

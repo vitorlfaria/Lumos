@@ -8,8 +8,8 @@
         </ul>
       </nav>
       <div class="btn-container flex gap">
-        <button class="btn btn-escuro"><i class="fa-solid fa-moon"></i></button>
-        <button class="btn btn-color btn-scale">contato</button>
+<!--        <button class="btn btn-escuro"><i class="fa-solid fa-moon"></i></button>-->
+        <a href="https://bit.ly/LumosContato" class="btn btn-color btn-scale">contato</a>
       </div>
     </div>
     <a href="https://bit.ly/LumosContato" target="_blank" @click="gtag_report_conversion">
@@ -47,12 +47,13 @@ export default {
 
 :root {
   --primaria: #8e00c1;
+  --secundaria: #0051a8;
   --escuro: #0a0916;
   --claro: #d8dae5;
   --sombra: #0000008f;
   --degrade-nav: #100f23;
   --degrade-escuro: linear-gradient(45deg, #201f38 0%, #110e24 100%);
-  --degrade-azul: #0051a8;
+  --degrade-color: linear-gradient(45deg, #0051a8 0%, #8e00c1 100%);
   --cinza-escuro: #110e24;
   --cinza-claro: #201f38;
 }
@@ -68,6 +69,7 @@ export default {
 
 html {
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -178,7 +180,7 @@ nav ul li {
   padding-left: 2rem;
   padding-right: 2rem;
   color: var(--claro);
-  background-image: linear-gradient(-45deg, var(--primaria) 20%, var(--degrade-azul));
+  background-image: linear-gradient(-45deg, var(--primaria) 20%, var(--secundaria));
 }
 
 .btn-scale {
