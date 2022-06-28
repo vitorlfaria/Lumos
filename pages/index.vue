@@ -18,7 +18,7 @@
   </header>
   <feature-component
     title="Nós fazemos tudo"
-    description="Qualquer que seja o tipo de site que você precisa, Lumos tem a expertise para entregar. Criamos sites responsivos que são otimizados para carregamento rápido e facilitar a navegação, bem como plugins personalizados para e-commerce e gestão de membros."
+    description="Qualquer que seja o tipo de site que você precisa, Lumos tem a expertise para entregar. Criamos sites responsivos que são otimizados para carregamento rápido e para facilitar a navegação."
     animation="68794-cute-astronaut-operating-laptop.json"
   />
   <feature-component-reverse
@@ -28,7 +28,7 @@
   />
   <feature-component
     title="Soluções por um valor justo"
-    description="Nós oferecemos preços acessíveis baseados na complexidade do seu projeto, garantindo que você receberá o melhor valor para o dinheiro. Nossa equipe está disponível para responder quaisquer perguntas ou dúvidas que você possa ter - então entre em contato conosco agora mesmo!"
+    description="Nós oferecemos preços acessíveis baseados na complexidade do seu projeto, garantindo que você receberá um plano que se encaixe na sua necessidade. Nossa equipe está disponível para responder quaisquer perguntas ou dúvidas que você possa ter - então entre em contato conosco agora mesmo!"
     animation="93344-money-investment.json"
   />
   <div class="chamada">
@@ -43,7 +43,7 @@
         <p>Criação de sites institucionais.</p>
       </div>
       <div class="card-servico">
-        <p>Configuração e gerenciamnto de Google Ads.</p>
+        <p>Configuração e gerenciamento de Google Ads.</p>
       </div>
     </div>
   </section>
