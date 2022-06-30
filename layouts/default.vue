@@ -9,7 +9,7 @@
       </nav>
       <div class="btn-container flex gap">
 <!--        <button class="btn btn-escuro"><i class="fa-solid fa-moon"></i></button>-->
-        <a href="https://bit.ly/LumosContato" class="btn btn-color btn-scale">contato</a>
+        <a href="https://bit.ly/LumosContato" class="btn btn-color btn-scale" target="_blank" @click="gtag_report_conversion">contato</a>
       </div>
     </div>
     <a href="https://bit.ly/LumosContato" target="_blank" @click="gtag_report_conversion">

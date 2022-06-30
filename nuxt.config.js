@@ -9,7 +9,7 @@ export default {
   head: {
     title: 'Lumos',
     htmlAttrs: {
-      lang: 'pt-BR',
+      lang: 'pt-BR'
     },
     meta: [
       { charset: 'utf-8' },
