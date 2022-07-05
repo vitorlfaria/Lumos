@@ -9,10 +9,10 @@
       </nav>
       <div class="btn-container flex gap">
 <!--        <button class="btn btn-escuro"><i class="fa-solid fa-moon"></i></button>-->
-        <a href="https://bit.ly/LumosContato" class="btn btn-color btn-scale" target="_blank" @click="gtag_report_conversion">contato</a>
+        <a :href="linkWpp" class="btn btn-color btn-scale" target="_blank" @click="gtag_report_conversion">contato</a>
       </div>
     </div>
-    <a href="https://bit.ly/LumosContato" target="_blank" @click="gtag_report_conversion">
+    <a :href="linkWpp" target="_blank" @click="gtag_report_conversion">
       <img src="@/assets/whatsapp.svg" alt="logo whatsapp" class="zipzop">
     </a>
     <nuxt />
@@ -37,6 +37,11 @@ export default {
         'send_to': 'AW-10936166285/eKTtCIzP88cDEI3P4t4o'
       });
       return false;
+    }
+  },
+  computed: {
+    linkWpp () {
+      return this.$store.getters.getLinkWpp
     }
   }
 }

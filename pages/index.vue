@@ -5,7 +5,7 @@
       <h1>Trazendo luz aos seus projetos</h1>
       <p>Seu negócio merece ser visto! E para ser notado, nada melhor do que um site próprio e personalizado</p>
       <div class="flex gap">
-        <a href="https://bit.ly/LumosContato" class="btn-lg btn-color btn-scale" target="_blank" @click="gtag_report_conversion">orçamentos</a>
+        <a :href="linkWpp" class="btn-lg btn-color btn-scale" target="_blank" @click="gtag_report_conversion">orçamentos</a>
         <a href="#servicos" class="btn-lg btn-escuro btn-scale">serviços</a>
       </div>
     </div>
@@ -48,7 +48,7 @@
     </div>
   </section>
   <section class="contato">
-    <a href="https://bit.ly/LumosContato" target="_blank" @click="gtag_report_conversion">
+    <a :href="linkWpp" target="_blank" @click="gtag_report_conversion">
       <div class="btn-contato">
         <h3>Entre em contato para montar o plano perfeito para você.</h3>
       </div>
@@ -76,6 +76,11 @@ export default {
         'send_to': 'AW-10936166285/eKTtCIzP88cDEI3P4t4o'
       });
       return false;
+    }
+  },
+  computed: {
+    linkWpp () {
+      return this.$store.getters.getLinkWpp
     }
   }
 }
