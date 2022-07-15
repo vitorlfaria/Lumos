@@ -53,6 +53,7 @@
         <h3>Entre em contato para montar o plano perfeito para você.</h3>
       </div>
     </a>
+    <a href="tel:41992338159" class="telefone"><i class="fas fa-phone"></i>(41) 99233-8159</a>
   </section>
 </div>
 </template>
@@ -182,6 +183,7 @@ header div.card {
   width: 100%;
   padding: 3rem 8rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -192,8 +194,12 @@ header div.card {
   transition: transform 300ms ease, background-color 300ms ease;
 }
 .btn-contato:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   background-color: #23b638;
+}
+.telefone {
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 .btn-contato h3 {
   font-size: 1.5rem;

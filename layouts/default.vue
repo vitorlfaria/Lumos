@@ -9,6 +9,7 @@
       </nav>
       <div class="btn-container flex gap">
 <!--        <button class="btn btn-escuro"><i class="fa-solid fa-moon"></i></button>-->
+        <a href="tel:41992338159" class="telefone"><i class="fas fa-phone"></i>(41) 99233-8159</a>
         <a :href="linkWpp" class="btn btn-color btn-scale" target="_blank" @click="gtag_report_conversion">contato</a>
       </div>
     </div>
@@ -157,6 +158,17 @@ nav ul li {
 
 .btn-container {
   margin-right: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.telefone {
+  font-weight: 700;
+}
+
+.telefone i {
+  margin-right: .5rem;
 }
 
 .btn {
