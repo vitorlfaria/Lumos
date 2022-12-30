@@ -4,23 +4,19 @@
       <nav class="flex align-center justify-between">
         <h1>Lumos</h1>
         <ul>
-          <li><nuxt-link to="/"><a>HOME</a></nuxt-link></li>
+          <li><a href="tel:41991860921" class="telefone"><i class="fas fa-phone"></i>(41) 99186-0921</a></li>
+          <li><a :href="linkWpp" class="btn btn-color btn-scale" target="_blank">contato</a></li>
         </ul>
       </nav>
-      <div class="btn-container flex gap">
-<!--        <button class="btn btn-escuro"><i class="fa-solid fa-moon"></i></button>-->
-        <a href="tel:41992338159" class="telefone"><i class="fas fa-phone"></i>(41) 99233-8159</a>
-        <a :href="linkWpp" class="btn btn-color btn-scale" target="_blank" @click="gtag_report_conversion">contato</a>
-      </div>
     </div>
-    <a :href="linkWpp" target="_blank" @click="gtag_report_conversion">
+    <a :href="linkWpp" target="_blank">
       <img src="@/assets/whatsapp.svg" alt="logo whatsapp" class="zipzop">
     </a>
     <nuxt />
     <footer>
-      <img src="@/assets/Logo-Lumos.svg" alt="Logo Lumos">
+      <span class="logo-footer">LUMOS</span>
       <div class="instagram">
-        <a href="https://www.instagram.com/lumos_curitiba" target="_blank">
+        <a href="https://www.instagram.com/vitorlacerdaf" target="_blank">
           <h4>Siga-nos no Instagram</h4>
           <i class="fab fa-instagram"></i>
         </a>
@@ -32,14 +28,6 @@
 
 <script>
 export default {
-  methods: {
-    gtag_report_conversion() {
-      this.$gtag('event', 'conversion', {
-        'send_to': 'AW-10936166285/eKTtCIzP88cDEI3P4t4o'
-      });
-      return false;
-    }
-  },
   computed: {
     linkWpp () {
       return this.$store.getters.getLinkWpp
@@ -128,11 +116,10 @@ html {
 }
 
 nav {
-  width: 60%;
-  padding: 1rem 5rem;
-  border-radius: 0 0 3rem 0;
-  color: var(--claro);
-  background-image: linear-gradient(to right, var(--escuro), var(--degrade-nav));
+  width: 100%;
+  padding: 1.5rem 5rem;
+  color: #131418;
+  background-color: #ffffff;
   box-shadow: 0 0 1rem var(--sombra);
 }
 
@@ -144,11 +131,12 @@ nav {
 }
 
 nav a {
-  color: var(--claro);
+  color: #131418;
 }
 
 nav h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: #131418;
 }
 
 nav ul li {
@@ -169,6 +157,7 @@ nav ul li {
 
 .telefone i {
   margin-right: .5rem;
+  color: #131418;
 }
 
 .btn {
@@ -190,14 +179,17 @@ nav ul li {
 }
 
 .btn-escuro {
-  background-image: var(--degrade-escuro);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #ffffff;
+  color: #0a0916;
 }
 
 .btn-color {
   padding-left: 2rem;
   padding-right: 2rem;
   color: var(--claro);
-  background-image: linear-gradient(-45deg, var(--primaria) 20%, var(--secundaria));
+  background-color: rgb(254, 132, 17);
 }
 
 .btn-scale {
@@ -220,7 +212,7 @@ nav ul li {
   width: fit-content;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.27);
+  background-color: rgba(40, 30, 17, 0.27);
   border-radius: 12px;
   border: 2px solid #ffffff0d;
   padding: 2rem;
@@ -254,8 +246,9 @@ footer {
   gap: 4rem;
   position: relative;
 }
-footer img {
-  width: 20%;
+.logo-footer {
+  font-weight: 700;
+  font-size: 3em;
 }
 .instagram a {
   display: flex;

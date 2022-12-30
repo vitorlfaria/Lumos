@@ -1,6 +1,7 @@
 <template>
 <div>
   <header class="container flex align-center justify-between">
+    <div class="header-strips"></div>
     <div class="infos">
       <h1>Trazendo luz aos seus projetos</h1>
       <p>Seu negócio merece ser visto! E para ser notado, nada melhor do que um site próprio e personalizado</p>
@@ -9,13 +10,15 @@
         <a href="#servicos" class="btn-lg btn-escuro btn-scale">serviços</a>
       </div>
     </div>
-    <lottie-animation ref="anim" :animationData="require('@/assets/93809-moon.json')" :loop="true" class="anim" />
-    <div class="card">
-      <h1>
-        Somos especializados em criação de <span>sites institucionais</span> que são <span>rápidos e eficientes</span>, dando a você uma presença digital autêntica.
-      </h1>
+    <div class="header-img">
+      <img src="~/assets/telas.png" alt="telas">
     </div>
   </header>
+  <div class="card">
+    <h1>
+      Somos especializados em criação de <span>sites institucionais</span> que são <span>rápidos e eficientes</span>, dando a você uma presença digital autêntica.
+    </h1>
+  </div>
   <feature-component
     title="Nós fazemos tudo"
     description="Qualquer que seja o tipo de site que você precisa, Lumos tem a expertise para entregar. Criamos sites responsivos que são otimizados para carregamento rápido e para facilitar a navegação."
@@ -89,15 +92,34 @@ export default {
 
 <style scoped>
 span {
-  color: var(--primaria)
+  color: #ffffff;
 }
 header {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url("@/assets/2833951.jpg");
-  background-size: 100%;
+  background-color: #0973b1;
   margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.header-strips {
+  width: 100%;
+  height: 1.5rem;
+  position: absolute;
+  top: 5.5rem;
+  left: 0;
+  background-color: #04539c;
+}
+
+.header-strips::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  background-color: #0060b9;
 }
 
 .infos {
@@ -107,13 +129,11 @@ header {
 .infos h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
-  filter: drop-shadow(0 0 1rem #000);
 }
 
 .infos p {
   line-height: 1.5rem;
   margin-bottom: 2rem;
-  filter: drop-shadow(0 0 1rem #000);
 }
 
 .anim {
@@ -126,12 +146,24 @@ header {
   font-size: 1.5rem;
 }
 
-header div.card {
+.card {
   max-width: 75%;
   position: absolute;
   bottom: -3rem;
   left: 50%;
   transform: translate(-50%);
+  background-color: rgba(223, 126, 0, 0.719);
+}
+.header-img {
+  position: relative;
+  height: 100%;
+}
+.header-img img {
+  width: 55em;
+  position: absolute;
+  right: -12rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .chamada {
   width: 100%;

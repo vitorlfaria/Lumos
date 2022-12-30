@@ -1,5 +1,5 @@
 export const state = () => ({
-  linkWpp: 'https://bit.ly/ContatoLumosSite'
+  linkWpp: 'https://wa.me/5541991860921'
 })
 
 export const getters = {
