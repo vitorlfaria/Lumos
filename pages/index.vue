@@ -43,11 +43,23 @@
     <h1>Nossos Serviços</h1>
     <div class="card-container">
       <div class="card-servico">
-        <p>Criação de sites institucionais totalmente personalizados para você.</p>
+        <img src="~/assets/website.png" alt="website" class="card-img">
+        <div class="card-text">
+          <p>Sites institucionais totalmente personalizados.</p>
+        </div>
       </div>
-<!--      <div class="card-servico">-->
-<!--        <p>Configuração e gerenciamento de Google Ads.</p>-->
-<!--      </div>-->
+      <div class="card-servico">
+        <img src="~/assets/mobile-app.png" alt="mobile" class="card-img">
+        <div class="card-text">
+          <p>Aplicativos para celular.</p>
+        </div>
+      </div>
+      <div class="card-servico">
+        <img src="~/assets/system.png" alt="system" class="card-img">
+        <div class="card-text">
+          <p>Sistemas completos.</p>
+        </div>
+      </div>
     </div>
   </section>
   <section class="contato">
@@ -152,7 +164,6 @@ header {
   bottom: -3rem;
   left: 50%;
   transform: translate(-50%);
-  background-color: rgba(223, 126, 0, 0.719);
 }
 .header-img {
   position: relative;
@@ -169,15 +180,11 @@ header {
   width: 100%;
   text-align: center;
   padding: 5rem 17rem;
-  background-image: url("@/assets/fundo-chamada.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: rgb(254, 132, 17);
 }
 .chamada h3 {
   font-size: 1.7rem;
   line-height: 2rem;
-  filter: drop-shadow(0 0 1rem #000);
 }
 .servicos {
   width: 100%;
@@ -191,7 +198,7 @@ header {
 .servicos h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  filter: drop-shadow(0 0 1rem #000);
+  color: var(--escuro);
 }
 .card-container {
   display: flex;
@@ -200,16 +207,31 @@ header {
   align-items: center;
   width: 100%;
   max-width: 1200px;
+  gap: 1rem;
 }
 .card-servico {
-  padding: 2rem;
   background-image: var(--degrade-color);
   border-radius: 1rem;
   width: 100%;
+  min-height: 20rem;
   text-align: center;
+  overflow: hidden;
 }
-.card-servico > p {
+.card-img {
+  width: 100%;
+  max-height: 10rem;
+  object-fit: cover;
+}
+.card-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.card-text > p {
   font-size: 1.3rem;
+  font-weight: 700;
 }
 .contato {
   width: 100%;
@@ -232,6 +254,7 @@ header {
 .telefone {
   font-size: 2rem;
   margin-top: 2rem;
+  color: var(--escuro);
 }
 .btn-contato h3 {
   font-size: 1.5rem;

@@ -112,7 +112,7 @@ html {
 #page {
   width: 100%;
   min-height: 100vh;
-  background-color: var(--escuro);
+  background-color: var(--claro);
 }
 
 nav {
@@ -212,7 +212,7 @@ nav ul li {
   width: fit-content;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(40, 30, 17, 0.27);
+  background-color: rgba(223, 126, 0, 0.719);
   border-radius: 12px;
   border: 2px solid #ffffff0d;
   padding: 2rem;
@@ -238,7 +238,7 @@ footer {
   width: 100%;
   padding: 3rem 0 5rem 0;
   margin-top: 2rem;
-  background-color: var(--cinza-escuro);
+  background-color: #04539c;
   border-top: 2px solid var(--cinza-claro);
   display: flex;
   align-items: center;
