@@ -58,7 +58,8 @@ export default {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  color: var(--claro);
+  color: #ffffff;
+  z-index: 10;
 }
 
 html {
@@ -112,7 +113,7 @@ html {
 #page {
   width: 100%;
   min-height: 100vh;
-  background-color: var(--claro);
+  background-color: #ffffff;
 }
 
 nav {
@@ -127,7 +128,7 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
 }
 
 nav a {
@@ -188,7 +189,7 @@ nav ul li {
 .btn-color {
   padding-left: 2rem;
   padding-right: 2rem;
-  color: var(--claro);
+  color: #ffffff;
   background-color: rgb(254, 132, 17);
 }
 
@@ -212,7 +213,7 @@ nav ul li {
   width: fit-content;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(223, 126, 0, 0.719);
+  background-color: #000000;
   border-radius: 12px;
   border: 2px solid #ffffff0d;
   padding: 2rem;
@@ -237,9 +238,7 @@ nav ul li {
 footer {
   width: 100%;
   padding: 3rem 0 5rem 0;
-  margin-top: 2rem;
-  background-color: #04539c;
-  border-top: 2px solid var(--cinza-claro);
+  background-color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -275,13 +274,8 @@ footer {
     display: none;
   }
 
-  nav {
-    width: 90%;
-    padding: .5rem 2rem;
-  }
-
-  nav ul li {
-    margin-left: 1rem;
+  nav ul {
+    display: none;
   }
 
   .zipzop {
